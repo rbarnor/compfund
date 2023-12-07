@@ -1,0 +1,32 @@
+<nav class="navbar bg-dnspot p-0">
+    <div class="container">
+        <a class="navbar-brand text-white" href="#">
+            DNSPOT
+        </a>
+
+        <span>
+            Ewowo s3 sofo abrob3
+        </span>
+
+    </div>
+</nav>
+
+<div class="container">
+    <!-- <app-post></app-post> -->
+    <table class="table table-striped mt-2 stripped">
+        <thead>
+          <tr>
+            <!-- <th scope="col">#</th> -->
+            <th scope="col">Name</th>
+            <th scope="col">Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let participant of data">
+            <!-- <th scope="row"> </th> -->
+            <td>{{participant.get("Contestant")}}</td>
+            <td>{{participant.get("Score")}} points</td>
+          </tr>
+        </tbody>
+    </table>
+</div>

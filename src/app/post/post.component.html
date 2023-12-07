@@ -1,0 +1,16 @@
+<table class="table table-striped mt-2 stripped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Score</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let participant of data">
+        <th scope="row"> </th>
+        <td>{{participant.id}}</td>
+        <td>{{participant.get}} points</td>
+      </tr>
+    </tbody>
+</table>
